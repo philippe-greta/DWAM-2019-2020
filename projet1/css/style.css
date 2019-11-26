@@ -1,0 +1,24 @@
+a {
+    color:red;
+    text-decoration: none
+}
+a:hover {
+    color:rgb(30, 255, 0);
+    text-decoration: none
+}
+p.red {
+    color: red;
+    /* This is a single-line comment */
+    text-align: center;
+  }
+ 
+   
+  /* This is
+  a multi-line
+  comment */
+   
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }

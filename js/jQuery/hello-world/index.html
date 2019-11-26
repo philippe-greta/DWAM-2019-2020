@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Le titre du document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    
+    <!-- contenu -->
+    <p id="hello" class="rouge">Hello world!</p>
+    <!-- fin du contenu -->
+    <div class="intro" style="width: 500px; height: 300px"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://greta.henaff.me/themes/simplegrayscale/js/jquery.backstretch.min.js"></script>
+    <script>
+      //<![CDATA[
+      $(document).ready(function() {
+        $("#hello").backstretch([
+            "https://greta.henaff.me/themes/simplegrayscale/img/intro-bg-1.jpg",
+            "https://greta.henaff.me/themes/simplegrayscale/img/intro-bg-2.jpg",
+            "https://greta.henaff.me/themes/simplegrayscale/img/intro-bg-3.jpg"
+            ], {
+              fade: 1500,
+              duration: 4000
+          });
+        
+      });
+      //]]>
+      </script>
+    <script src="script.js"></script>
+  </body>
+</html>

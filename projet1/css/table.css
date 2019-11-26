@@ -1,0 +1,15 @@
+table
+{
+    border-collapse: collapse;
+}
+td, th
+{
+    border: 1px solid black;
+    min-width: 100px
+}
+td {
+    text-align: right
+}
+.prenom {
+    text-align: left
+}

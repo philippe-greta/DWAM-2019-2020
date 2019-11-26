@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+ 
+<head>
+ 
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+</head>
+ 
+<body>
+    <form method="post" action="#">
+ 
+        <fieldset>
+            <legend>Texte</legend>
+ 
+            <p><label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="votre nom" size="30" maxlength="30" required></p>
+ 
+            <p><label for="email">E-mail :</label>
+                <input type="email" name="email" id="email"></p>
+ 
+            <p><label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password"></p>
+ 
+            <p><label for="date">Date :</label>
+                <input type="date" name="date" id="date"></p>
+ 
+            <p><label for="url">URL :</label>
+                <input type="url" name="url" id="url"></p>
+ 
+            <p><label for="comment">Commentaire :</label>
+                <textarea name="comment" id="comment" rows="10" cols="50"></textarea></p>
+ 
+ 
+        </fieldset>
+ 
+        <fieldset>
+            <legend>Nombres</legend>
+ 
+            <p><label for="number">Nombre :</label>
+                <input type="number" name="number" id="number"></p>
+ 
+            <p><label for="tel">Téléphone :</label>
+                <input type="tel" name="tel" id="tel"></p>
+ 
+            <p><label for="range">Curseur :</label>
+                <input type="range" name="range" id="range" min="1" max="5"></p>
+ 
+        </fieldset>
+ 
+        <fieldset>
+            <legend>Couleur</legend>
+ 
+            <p><label for="color">Couleur :</label>
+                <input type="color" name="color" id="color"></p>
+ 
+ 
+        </fieldset>
+ 
+        <fieldset>
+            <legend>Cases à cocher</legend>
+ 
+            <p>Choix :</p>
+            <p>
+                <input type="checkbox" name="choix1" id="choix1" checked> <label for="choix1">choix 1</label><br />
+                <input type="checkbox" name="choix2" id="choix2"> <label for="choix2">choix 2 </label><br />
+                <input type="checkbox" name="choix3" id="choix3"> <label for="choix3">choix 3</label><br />
+            </p>
+ 
+        </fieldset>
+ 
+        <fieldset>
+            <legend>Boutons radio</legend>
+ 
+            <p>Choix :</p>
+            <p>
+                <input type="radio" name="radio" id="radio1" value="1"> <label for="radio1">choix 1</label><br />
+                <input type="radio" name="radio" id="radio2" value="2"> <label for="radio2">choix 2 </label><br />
+                <input type="radio" name="radio" id="radio3" value="3"> <label for="radio3">choix 3</label><br />
+            </p>
+ 
+        </fieldset>
+ 
+        <fieldset>
+            <legend>Menu déroulant</legend>
+ 
+            <p>Choix :</p>
+            <p>
+                <label for="pays">Pays</label><br />
+                <select name="pays" id="pays">
+                    <optgroup label="Latin">
+                        <option value="fr">France</option>
+                        <option value="es">Espagne</option>
+                    </optgroup>
+                    <optgroup label="Saxon">
+                        <option value="de">Allemagne</option>
+                        <option value="uk">Royaume-Uni</option>
+                    </optgroup>
+                </select>
+            </p>
+ 
+        </fieldset>
+ 
+        <fieldset>
+            <legend>Envoi du formulaire</legend>
+            <input type="submit" value="envoyer">
+            <input type="reset" value="effacer">
+        </fieldset>
+    </form>
+</body>
+ 
+</html>
