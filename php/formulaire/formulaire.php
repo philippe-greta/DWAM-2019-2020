@@ -5,20 +5,20 @@ try {
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 }
-if (isset($_POST['firstName'],
-    $_POST['lastName'],
-    $_POST['username'],
-    $_POST['email'],
-    $_POST['address'],
-    $_POST['address2'],
-    $_POST['country'],
-    $_POST['state'],
-    $_POST['zip'],
-    $_POST['paymentMethod'],
-    $_POST['cc-name'],
-    $_POST['cc-number'],
-    $_POST['cc-expiration'],
-    $_POST['cc-cvv'])) 
+if (!empty($_POST['firstName']) &&
+!empty($_POST['lastName']) &&
+!empty($_POST['username']) &&
+!empty($_POST['email']) &&
+!empty($_POST['address']) &&
+!empty($_POST['address2']) &&
+!empty($_POST['country']) &&
+!empty($_POST['state']) &&
+!empty($_POST['zip']) &&
+!empty($_POST['paymentMethod']) &&
+!empty($_POST['cc-name']) &&
+!empty($_POST['cc-number']) &&
+!empty($_POST['cc-expiration']) &&
+!empty($_POST['cc-cvv'])) 
 {
     echo 'tout est rempli';
     $prenom_client = htmlspecialchars($_POST['firstName']);

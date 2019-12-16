@@ -1,14 +1,14 @@
 <?php
 
-// $bdd = new PDO('mysql:host=localhost;dbname=gretb;charset=utf8', 'root', 'root',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+// $bdd = new PDO('mysql:host=localhost;dbname=greta;charset=utf8', 'root', 'root',array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 try {
-    $bdd = new PDO('mysql:host=localhost;dbname=greta;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $bdd = new PDO('mysql:host=localhost;dbname=greta;charset=utf8', 'root', '');
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 }
 
-if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['email'])) {
+if (!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email'])) {
     $nom = htmlspecialchars($_POST['nom']);
     $prenom = htmlspecialchars($_POST['prenom']);
     $mail = htmlspecialchars($_POST['email']);
