@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^$ http://localhost/bacasable/php/test.vars.php [R=301,L]
