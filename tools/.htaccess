@@ -1,4 +1,4 @@
 AuthName "Greta DWAM 2019-2020"
 AuthType Basic
-AuthUserFile "***/htdocs/bacasable/tools/.htpasswd"
-#Require valid-user
+AuthUserFile "C:\xampp\htdocs\bacasable\tools\.htpasswd"
+Require valid-user
