@@ -1,0 +1,4 @@
+AuthName "Greta DWAM 2019"
+AuthType Basic
+AuthUserFile "/opt/lampp/htdocs/bacasable/tools/.htpasswd"
+Require valid-user
